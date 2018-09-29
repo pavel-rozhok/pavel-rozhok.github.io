@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="libs/normalize/normalize.min.css">
+    <link rel="stylesheet" href="libs/hamburger/hamburgers.min.css">
+    <link rel="stylesheet" href="libs/font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="libs/flexboxgrid/flexboxgrid.min.css">
+    <link rel="stylesheet" href="assets/pages/contacts/contacts.min.css">
+    <link rel="stylesheet" href="assets/global/css/global.min.css">
+    <link rel="stylesheet" href="assets/features/navbar/navbar.min.css">
+    <link rel="stylesheet" href="assets/features/footer/footer.min.css">
+
+    <title>Blog - Impreza</title>
+</head>
+<body>
+    <nav id="j-navbar" class="navbar navbar--background">
+        <a href="/">
+            <img class="navbar__logo" src="assets/images/logo.png" alt="Logo">
+        </a>
+        <div class="navbar__links">
+            <a class="navbar__link" href="index.html">Home</a>
+            <a class="navbar__link" href="portfolio.html">Portfolio</a>
+            <a class="navbar__link" href="about.html">About Us</a>
+            <a class="navbar__link" href="blog.html">Blog</a>
+            <a class="navbar__link" href="contacts.html">Contacts</a>
+        </div>
+        <button class="hamburger navbar__hamburger hamburger--slider j-navbar-hamburger" type="button">
+            <span class="hamburger-box navbar__hamburger-box">
+                <span class="hamburger-inner navbar__hamburger-inner"></span>
+            </span>
+        </button>
+        <div class="navbar__socials">
+            <a class="navbar__social" href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+            <a class="navbar__social" href="#">
+                <i class="fab fa-twitter"></i>
+            </a>
+            <a class="navbar__social" href="#">
+                <i class="fab fa-vimeo-v"></i>
+            </a>
+            <a class="navbar__social" href="#">
+                <i class="fab fa-behance"></i>
+            </a>
+            <a class="navbar__social" href="#">
+                <i class="fas fa-basketball-ball"></i>
+            </a>
+        </div>
+    </nav>
+
+    <iframe
+        class="contacts__maps"
+        src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d5126.4311143870755!2d36.31344709354859!3d50.02605658488199!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sua!4v1538214711053"
+        frameborder="0"
+        style="border:0"
+        allowfullscreen
+    ></iframe>
+
+    <div id="map" class="contacts__maps"></div>
+
+    <div class="g-container row contacts__content">
+        <div class="contacts__block col-xs-12 col-sm-4 contacts__descroption">
+            <div class="contacts__description-title">
+                <span class="contacts__description-title--bold">Write to</span> us
+            </div>
+            <p class="contacts__paragraph">
+                Sed ut perspiciatis unde omnis iste natus error sit
+                voluptatem accusantium doloremque laudantium, totam rem
+                aperiam, eaque quae explicabo.
+            </p>
+            <p class="contacts__paragraph">
+                Nemo enim ipsam voluptatem quia voluptas sit aspernatur
+                aut odit aut fugit, sed quia conseq untur magni dolores eos
+                qui ratione
+            </p>
+        </div>
+
+        <div class="contacts__block col-xs-12 col-sm-4 contacts__info">
+            <div class="contacts__info-item">
+                <i class="contacts__info-icon fas fa-map-marker-alt"></i>
+                <div class="contacts__item-text">
+                    77 Massachusetts Ave,
+                    <br>
+                    Cambridge
+                </div>
+            </div>
+            <div class="contacts__info-item">
+                <i class="contacts__info-icon   fas fa-phone"></i>
+                <div class="contacts__item-text">
+                    +1 617-253-100
+                </div>
+            </div>
+            <div class="contacts__info-item">
+                <i class="contacts__info-icon   far fa-envelope"></i>
+                <div class="contacts__item-text">
+                    info@example.com
+                </div>
+            </div>
+        </div>
+
+        <div class="contacts__block col-xs-12 col-sm-4">
+            <form class="contacts__form" method="POST" action="/">
+                <div class="contacts__form-item">
+                    <input
+                        name="name"
+                        class="contacts__form-input"
+                        placeholder="Name *"
+                        type="text"
+                    >
+                    <i class="contacts__form-icon far fa-user"></i>
+                </div>
+                <div class="contacts__form-item">
+                    <input
+                        name="email"
+                        class="contacts__form-input"
+                        placeholder="Email *"
+                        type="text"
+                    >
+                    <i class="contacts__form-icon far fa-envelope"></i>
+                </div>
+                <div class="contacts__form-item">
+                    <textarea
+                        name="message"
+                        class="contacts__form-textarea"
+                        name="message"
+                        id="message"
+                        placeholder="Message *"
+                    ></textarea>
+                    <i class="contacts__form-icon fas fa-pen"></i>
+                </div>
+                <button type="submit" class="g-button g-button--main-color">
+                    Send message
+                </button>
+            </form>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="g-container footer__wrapper">
+            <div class="footer__copy">
+                <span class="footer__copy"> ©2018</span>
+                <a class="footer__copy-link" href="#">Impreza Theme</a>
+                by UpSolution
+            </div>
+            <div class="footer__links">
+                <a class="footer__link" href="/">Home</a>
+                <a class="footer__link" href="portfolio.html">Portfolio</a>
+                <a class="footer__link" href="about.html">About Us</a>
+                <a class="footer__link" href="blog.html">Blog</a>
+                <a class="footer__link" href="contacts.html">Contacts</a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="libs/jquery/jquery-3.3.1.min.js"></script>
+    <script src="assets/features/navbar/navbar.min.js"></script>
+    <script src="assets/pages/contacts/contacts.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDfEyhPDaHIFpuYklA5m0fnIxK3OH9CbGQ&callback=initMap"
+    async defer></script>
+</body>
+</html>

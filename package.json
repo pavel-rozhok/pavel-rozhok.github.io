@@ -1,0 +1,33 @@
+{
+  "name": "impreza",
+  "version": "1.0.0",
+  "description": "Test template",
+  "main": "gulpfile.js",
+  "devDependencies": {
+    "@babel/core": "^7.0.0",
+    "@babel/preset-env": "^7.0.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-eslint": "^8.2.3",
+    "del": "^3.0.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.1",
+    "eslint-plugin-react": "^7.11.1",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-eslint": "^5.0.0",
+    "gulp-minify": "^3.1.0",
+    "gulp-minify-css": "^1.2.4",
+    "gulp-notify": "^3.2.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://bitbucket.org/byr27/impreza.git"
+  },
+  "author": "Pavel Rozhok",
+  "license": "MIT",
+  "homepage": "https://bitbucket.org/byr27/impreza#readme"
+}
