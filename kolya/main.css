@@ -1,6 +1,6 @@
 #myslide {
-  height: 640px;
-  width: 480px;
+  height: 1280px;
+  width: 960px;
   border: 3px solid black;
   position: relative;
 
@@ -17,6 +17,6 @@
 }
 
 img {
-  height: 640px;
-  width: 480px;
+  height: 1280px;
+  width: 960px;
 }
