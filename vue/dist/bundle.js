@@ -335,6 +335,7 @@ __webpack_require__.r(__webpack_exports__);
 
       ;
       this.wallets.unshift(Object(_models_wallet__WEBPACK_IMPORTED_MODULE_0__["default"])(this.allWallets));
+      this.allWallets = Object(_models_wallet__WEBPACK_IMPORTED_MODULE_0__["default"])();
       this.formFields = Object(_models_formFields__WEBPACK_IMPORTED_MODULE_1__["default"])();
       this.saveWallets();
       this.isShownModal = false;
