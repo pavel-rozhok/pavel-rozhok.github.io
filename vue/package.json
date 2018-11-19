@@ -1,0 +1,56 @@
+{
+  "name": "webpack-vue",
+  "version": "1.0.0",
+  "description": "",
+  "main": "webpack.config.js",
+  "scripts": {
+    "prod": "webpack --env production",
+    "dev": "webpack --env development",
+    "watch": "webpack --env development --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/BrooonS/webpack-vue.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/BrooonS/webpack-vue/issues"
+  },
+  "homepage": "https://gitlab.com/BrooonS/webpack-vue#readme",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-transform-object-assign": "^7.0.0",
+    "@babel/preset-env": "^7.1.6",
+    "babel-loader": "^8.0.4",
+    "eslint": "^5.9.0",
+    "eslint-loader": "^2.1.1",
+    "eslint-plugin-vue": "^4.7.1",
+    "stylelint-webpack-plugin": "^0.10.5",
+    "vue-loader": "^15.4.2",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "babel-eslint": "^10.0.1",
+    "chober": "^1.1.1",
+    "css-loader": "^1.0.1",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-import-resolver-webpack": "^0.10.1",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "node-sass": "^4.10.0",
+    "sass-loader": "^7.1.0",
+    "stylelint": "^9.8.0",
+    "stylelint-config-recommended-scss": "^3.2.0",
+    "stylelint-config-standard": "^18.2.0",
+    "stylelint-scss": "^3.4.0",
+    "vue": "^2.5.17",
+    "vue-moment": "^4.0.0",
+    "vue-resource": "^1.5.1",
+    "vue-router": "^3.0.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17"
+  }
+}
