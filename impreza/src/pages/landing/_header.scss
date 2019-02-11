@@ -1,0 +1,110 @@
+.header {
+  &__slide-title {
+    font-size: 80px;
+    color: #fff;
+    line-height: 1;
+  }
+
+  &__slide-item {
+    position: relative;
+    min-height: 100vh;
+    padding: 10% 0;
+    background: url($path-to-images + 'home-slider-bg-1.jpg') no-repeat center center/cover;
+    &--2 {
+      background-image: url($path-to-images + 'home-slider-bg-2.jpg');
+    }
+    &--3 {
+      background-image: url($path-to-images + 'home-slider-bg-3.jpg');
+    }
+  }
+
+  &__slide-content {
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+  }
+
+  &__slide-image {
+    max-width: 500px;
+    max-height: 280px;
+  }
+
+  &__slide-description {
+    max-width: 440px;
+    min-width: 440px;
+    margin-left: 100px;
+    color: rgb(117, 120, 142);
+    font-weight: 300;
+    font-size: 17px;
+  }
+
+  &__slide-dots {
+    position: absolute;
+    top: 50%;
+    right: 10%;
+    display: flex;
+    flex-direction: column;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    transform: translateY(-50%);
+
+    li {
+      position: relative;
+      display: inline-block;
+      width: 20px;
+      height: 20px;
+      margin: 0 5px;
+      padding: 0;
+      cursor: pointer;
+
+      button {
+        font-size: 0;
+        line-height: 0;
+        display: block;
+        width: 20px;
+        height: 20px;
+        padding: 5px;
+        cursor: pointer;
+        color: transparent;
+        border: 0;
+        outline: none;
+        background: transparent;
+        &:hover,
+        &:focus {
+          outline: none;
+          &::before {
+            opacity: 1;
+            background-color: $main-color;
+            border: 2px solid $main-color;
+          }
+        }
+        &::before {
+          background-color: transparent;
+          border: 2px solid #aaa;
+
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 5px;
+          height: 5px;
+          content: '';
+          text-align: center;
+          -webkit-font-smoothing: antialiased;
+          -moz-osx-font-smoothing: grayscale;
+
+        }
+      }
+    }
+  }
+  .slick-arrow {
+          position: absolute;
+          z-index: 10;
+          top: calc(60% - 150px);
+          right: 10%;
+          left: auto;
+          &.slick-prev {
+            right: 20%;
+          }
+        }
+}

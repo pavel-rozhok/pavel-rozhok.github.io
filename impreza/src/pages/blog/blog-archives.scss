@@ -1,0 +1,135 @@
+@import '../../global/css/_variables';
+
+.archives {
+  &__header {
+    position: relative;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    background-color: $dark-color;
+  }
+
+  &__header-title {
+    position: absolute;
+    z-index: 3;
+    bottom: 64px;
+    left: auto;
+    right: auto;
+    margin: 0;
+    font-size: 60px;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: -.05em;
+    color: #fff;
+  }
+
+  &__content {
+    padding: 64px 24px;
+    width: 418px;
+  }
+
+  &__item {
+    padding-bottom: 64px;
+  }
+
+  &__item-title {
+    display: block;
+    font-size: 1.2rem;
+    color: $dark-lighten-color;
+    margin: 15px 0 10px;
+    font-weight: 300;
+    &:hover {
+      color: $dark-color;
+    }
+  }
+
+  &__description {
+    color: $dark-lighten-color;
+    font-size: 0.9rem;
+  }
+
+  &__description-item {
+    margin-right: 20px;
+    color: $dark-lighten-color;
+  }
+
+  &__text {
+    color: $dark-color;
+  }
+
+  &__sidebar {
+    padding: 64px 0 64px 75px;
+  }
+
+  &__search-form {
+    position: relative;
+    width: 100%;
+    background-color: #f2f4f5;
+    height: auto;
+  }
+
+  &__search-input {
+    outline: none;
+    width: 100%;
+    background-color: transparent;
+    padding: 0 2.8rem 0 .8rem;
+    line-height: 2.8rem;
+    height: 2.8rem;
+    color: $dark-color;
+    border: 2px solid transparent;
+    transition: border .3s;
+    &:focus  {
+      border-color: $main-color;
+    }
+  }
+
+  &__search-submit {
+    position: absolute;
+    top: 28%;
+    right: 10px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    opacity: .3;
+    transition: all .4s;
+    transition-property: opacity, color;
+    cursor: pointer;
+    &:hover {
+      opacity: 1;
+      color: $main-color;
+    }
+  }
+
+  &__sidebar-title {
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 300;
+    margin: 50px 0 15px 0;
+    color: $dark-color;
+  }
+
+  &__sidebar-arrow {
+    opacity: .3;
+    color: $dark-color;
+  }
+
+  &__sidebar-link {
+    color: $main-color;
+    padding-left: 5px;
+    &:hover {
+      color: $link-hover-color;
+    }
+  }
+
+  &__sidebar-date {
+    font-size: .9rem;
+    opacity: .5;
+    color: $dark-lighten-color;
+    padding-left: 16px;
+    margin-bottom: 10px;
+  }
+
+  &__sidebar-span {
+    color: $dark-color;
+  }
+}

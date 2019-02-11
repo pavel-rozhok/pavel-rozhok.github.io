@@ -1,0 +1,77 @@
+@import '../../global/css/_variables';
+
+.blog {
+  &__header {
+    position: relative;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    background: url($path-to-images + 'blog-bg.jpg') no-repeat 0/cover;
+    &::before {
+      content: '';
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: rgba(34, 35, 41, .8);
+    }
+  }
+
+  &__header-title {
+    position: absolute;
+    z-index: 3;
+    bottom: 64px;
+    left: auto;
+    right: auto;
+    margin: 0;
+    font-size: 60px;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: -.05em;
+    color: #fff;
+  }
+
+  &__content {
+    padding: 100px 0;
+  }
+
+  &__item {
+    padding: 24px;
+    @media screen and (max-width: $media-sm-max) {
+      padding: 0;
+    }
+  }
+
+  &__item-title {
+    display: block;
+    font-size: 24px;
+    font-weight: 300;
+    color: $dark-color;
+    padding-top: 10px;
+    &:hover {
+      color: $main-text-color;
+    }
+  }
+
+  &__description {
+    display: flex;
+    color: $light-gray;
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+
+  &__comments {
+    margin-left: 1.2rem;
+    color: $light-gray;
+    &:hover {
+      color: $dark-color;
+    }
+  }
+
+  &__item-text {
+    margin-top: 10px;
+    color: $main-text-color;
+  }
+}

@@ -1,0 +1,130 @@
+@import '../../global/css/variables';
+
+.switches {
+  position: fixed;
+  z-index: 1000;
+  top: 30%;
+  transition: all .5s;
+  transition-property: margin-right, margin-left;
+  @media screen and (max-width: $media-sm-max) {
+    display: none;
+  }
+  &--right {
+    right: 0;
+    margin-right: -128px;
+    &:hover {
+      margin-right: 0;
+
+    }
+  }
+  &--left {
+    left: 0;
+    margin-left: -128px;
+    &:hover {
+      margin-left: 0;
+    }
+  }
+  &:hover {
+    .switches__description {
+      margin-top: 0;
+      opacity: 1;
+      height: auto;
+      transition-delay: .5s;
+    }
+
+   .switches__arrow {
+      width: 128px;
+      background: $main-color;
+    }
+  }
+
+  &__item {
+    display: flex;
+    position: relative;
+  }
+
+  &__arrow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 99;
+    width: 40px;
+    height: 128px;
+    background-color: rgba(0, 0, 0, .3);
+    transition: all .5s;
+    transition-property: background, width;
+    font-size: 25px;
+    color: #fff;
+  }
+
+  &__image {
+    z-index: 99;
+    width: 128px;
+    height: 128px;
+    object-fit: cover;
+  }
+
+  &__description {
+    background-color: rgba(30, 30, 30, .9);
+    padding: .7rem 1rem;
+    margin-top: -45px;
+    height: 0;
+    color: #fff;
+    font-size: .9rem;
+    line-height: 1.4rem;
+    opacity: 0;
+    transition: all .3s;
+    transition-property: margin-top, opacity;
+    &--right {
+      text-align: right;
+    }
+    &--left {
+      text-align: left;
+    }
+  }
+}
+
+.switches-small {
+  display: none;
+  justify-content: space-between;
+  align-items: center;
+  @media screen and (max-width: $media-sm-max) {
+    display: flex;
+  }
+  &__item {
+    position: relative;
+    width: 100%;
+  }
+
+  &__image {
+    height: 128px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  &__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(30,30,30,.66);
+    z-index: 100;
+  }
+
+  &__text {
+    position: absolute;
+    top: 42%;
+    font-size: 16px;
+    line-height: 1.4rem;
+    color: #fff;
+    z-index: 111;
+    text-transform: uppercase;
+    &--left {
+      left: 2%;
+    }
+    &--right {
+      right: 2%;
+    }
+  }
+}

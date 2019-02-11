@@ -1,0 +1,110 @@
+@import 'variables';
+@import 'fonts';
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  transition: color .4s ease;
+}
+
+h2 {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+textarea {
+  vertical-align: middle;
+  resize: vertical;
+}
+
+img {
+  max-width: 100%;
+  vertical-align: middle;
+}
+
+body {
+  font: 400 16px/30px 'Open Sans', sans-serif;
+}
+
+.g-container {
+  position: relative;
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 20px;
+  &--narrow {
+    max-width: 1100px;
+  }
+}
+
+.g-button {
+  position: relative;
+  z-index: 1;
+  display: inline-block;
+  user-select: none;
+  text-align: center;
+  font: inherit;
+  cursor: pointer;
+  outline: none;
+  text-transform: uppercase;
+  white-space: nowrap;
+  font-size: 18px;
+  font-weight: 400;
+  color: $dark-lighten-color;
+  padding: 0 25px;
+  line-height: 3;
+  letter-spacing: 0.06em;
+  border: 2px solid $dark-lighten-color;
+  background: transparent;
+  transition: all .3s ease;
+  transition-property: border-color, color, background-color;
+  &::before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 100%;
+    background-color: $dark-lighten-color;
+    transition: bottom .3s ease;
+  }
+  &:hover {
+    color: #fff;
+    &::before {
+      bottom: 0;
+    }
+  }
+  &--white {
+    border-color: #fff;
+    color: #fff;
+    &::before {
+      background-color: #fff;
+    }
+    &:hover {
+      color: $dark-lighten-color;
+    }
+  }
+  &--gray {
+    border-color: #d2dbe6;
+    &:hover {
+      color: $dark-lighten-color;
+    }
+    &::before {
+      background-color: #d2dbe6;
+    }
+  }
+  &--main-color {
+    border-color: $main-color;
+    color: $main-color;
+    &::before {
+      background-color: $main-color;
+    }
+    &:hover {
+      color: #fff;
+    }
+  }
+}

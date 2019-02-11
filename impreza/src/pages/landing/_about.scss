@@ -1,0 +1,26 @@
+@import '../../global/css/_variables';
+
+.about {
+  padding-top: 128px;
+  display: flex;
+  justify-content: space-between;
+  height: 600px;
+  background: url($path-to-images + 'home-about-bg.jpg') no-repeat bottom right/contain;
+  @media screen and (max-width: $media-md-max) {
+    padding-top: 0;
+  }
+
+  &__title {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: $dark-color;
+    font-weight: 700;
+    margin-top: 0;
+  }
+
+  &__text {
+    max-width: 630px;
+    margin-bottom: 50px;
+    color: $dark-lighten-color;
+  }
+}

@@ -1,0 +1,64 @@
+@import '../../global/css/_variables';
+
+.human {
+  &__background {
+    background: url($path-to-images + 'human-background.jpg') fixed no-repeat 0/cover;
+  }
+
+  &__header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    height: 310px;
+  }
+
+  &__header-title {
+    position: absolute;
+    z-index: 3;
+    bottom: 64px;
+    left: auto;
+    right: auto;
+    margin: 0;
+    font-size: 60px;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+    color: #fff;
+  }
+
+  &__section {
+    padding: 194px 69px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    @media screen and (max-width: $media-md-max) {
+      display: block;
+    }
+  }
+
+  &__section-image {
+    text-align: center;
+  }
+
+  &__section-text {
+  }
+
+  &__section-inscription {
+    font-size: 18px;
+    line-height: 1.5;
+    color: $main-color;
+  }
+
+  &__section-title {
+    font-size: 40px;
+    line-height: 1.4;
+    letter-spacing: 0;
+    color: #fff;
+    margin-top: 0;
+    text-transform: uppercase;
+    @media screen and (max-width: $media-sm-max) {
+      font-size: 28px;
+    }
+  }
+}

@@ -1,0 +1,109 @@
+ @import '../../global/css/_variables';
+
+.contacts {
+  &__maps {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  &__block {
+    padding: 50px 0;
+  }
+
+
+  &__description {
+    padding: 0;
+  }
+
+  &__description-title {
+    margin-bottom: 24px;
+    font-size: 32px;
+    line-height: 1.4;
+    font-weight: 300;
+    color: $dark-color;
+    text-transform: uppercase;
+    &--bold {
+      font-weight: 700;
+    }
+  }
+
+  &__paragraph {
+    margin: 24px 0 0;
+  }
+
+  &__info {
+    padding: 0 35px;
+  }
+
+  &__info-item {
+    display: flex;
+    align-items: center;
+    font-size: 28px;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: 0em;
+    color: $dark-color;
+    margin-bottom: 25px;
+  }
+
+  &__info-icon {
+    color: $main-color;
+    width: 1.1em;
+    font-size: 36px;
+    line-height: 1;
+    margin-right: 22px;
+    text-align: center;
+  }
+
+  &__form-item {
+    position: relative;
+    margin-bottom: 15px;
+    color: $dark-color;
+    padding: 0;
+  }
+
+  &__form-icon {
+    position: absolute;
+    top: 13px;
+    left: 15px;
+    font-size: 1.3rem;
+    opacity: .3;
+  }
+
+  &__form-input,
+  &__form-textarea {
+    background-color: #f2f4f5;
+    border: 2px solid transparent;
+    box-shadow: 0 -1px 0px $gray;
+    outline: none;
+    padding: .8rem .8rem .8rem 2.8rem;
+    width: 100%;
+    transition: all .3s ease;
+    transition-property: box-shadow, border;
+    &:focus  {
+      border: 2px solid $main-color;
+      box-shadow: none;
+      + .contacts__form-icon {
+        color: $main-color;
+        opacity: 1;
+      }
+    }
+  }
+
+  &__form-textarea {
+    min-height: 100px;
+  }
+
+  &__block {
+    padding: 50px 0;
+  }
+}
+
+#map {
+  display: none;
+}

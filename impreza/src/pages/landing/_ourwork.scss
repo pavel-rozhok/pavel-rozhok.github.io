@@ -1,0 +1,57 @@
+@import '../../global/css/variables';
+
+.work {
+  background: url($path-to-images + 'work-background.jpg') bottom right/contain  no-repeat ;
+  &__content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 0 24px;
+  }
+
+  &__caption {
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-bottom: 57px;
+    line-height: 1.4;
+    font-weight: 700;
+  }
+
+  &__item {
+    padding: 17px 0;
+    flex-basis: 25%;
+    @media screen and (max-width:1100px) {
+      flex-basis: 50%;
+    }
+    @media screen and (max-width:670px) {
+      flex-basis: 100%;
+    }
+  }
+
+  &__image {
+    width: 70px;
+    height: 70px;
+    display: flex;
+    margin: 0 auto;
+  }
+
+  &__span {
+    font-size: 18px;
+  }
+
+  &__title {
+    text-align: center;
+    font-size: 28px;
+    padding: 14px;
+    color: #2b2c36;
+    font-weight: 300;
+  }
+
+  &__description {
+    text-align: center;
+    width: 100%;
+    padding: 0 45px;
+    margin: 0;
+    color: $dark-lighten-color;
+  }
+}

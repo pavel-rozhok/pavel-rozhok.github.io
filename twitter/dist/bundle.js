@@ -4610,7 +4610,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".dialogues {\n  background-color: #fff;\n  position: relative;\n  padding-bottom: 30px;\n}\n.dialogues__title {\n    border-bottom: 2px solid #e6ecf0;\n    font-weight: 700;\n}\n.dialogues__info {\n    text-align: center;\n    padding: 20px;\n}\n.dialogues__info-title {\n    font-size: 21px;\n    text-align: center;\n    margin: 20px 0;\n    font-weight: 700;\n}\n.dialogues__info-text {\n    text-align: center;\n    margin: 20px 0;\n    display: block;\n    color: #657786;\n}\n.dialogues__create-message {\n    position: absolute;\n    bottom: 3%;\n    right: 6%;\n    background-color: #1da1f2;\n    border-radius: 50%;\n    padding: 10px 0;\n    width: 50px;\n    height: 50px;\n}\n", ""]);
+exports.push([module.i, ".dialogues {\n  position: relative;\n  background-color: #fff;\n  padding-bottom: 30px;\n  min-height: calc(100vh - 85px);\n}\n.dialogues__title {\n    border-bottom: 2px solid #e6ecf0;\n    font-weight: 700;\n}\n.dialogues__info {\n    text-align: center;\n    padding: 20px;\n}\n.dialogues__info-title {\n    font-size: 21px;\n    text-align: center;\n    margin: 20px 0;\n    font-weight: 700;\n}\n.dialogues__info-text {\n    text-align: center;\n    margin: 20px 0;\n    display: block;\n    color: #657786;\n}\n.dialogues__create-message {\n    position: absolute;\n    bottom: 3%;\n    right: 6%;\n    background-color: #1da1f2;\n    border-radius: 50%;\n    padding: 10px 0;\n    width: 50px;\n    height: 50px;\n}\n", ""]);
 
 // exports
 
@@ -4629,7 +4629,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../node_modules/css-
 
 
 // module
-exports.push([module.i, ".messages {\n  background-color: #fff;\n}\n.messages__info-wrapper {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 20px;\n    height: 100%;\n}\n.messages__info {\n    text-align: center;\n}\n.messages__info-title {\n    font-size: 21px;\n    margin: 20px 0;\n    font-weight: 700;\n}\n.messages__info-text {\n    margin: 20px 0;\n    display: block;\n    color: #657786;\n}\n", ""]);
+exports.push([module.i, ".messages {\n  background-color: #fff;\n  min-height: calc(100vh - 85px);\n  display: flex;\n  justify-content: center;\n  align-items: center;\n}\n.messages__info-wrapper {\n    display: flex;\n    justify-content: center;\n    align-items: center;\n    padding: 20px;\n    height: 100%;\n}\n.messages__info {\n    text-align: center;\n}\n.messages__info-title {\n    font-size: 21px;\n    margin: 20px 0;\n    font-weight: 700;\n}\n.messages__info-text {\n    margin: 20px 0;\n    display: block;\n    color: #657786;\n}\n", ""]);
 
 // exports
 

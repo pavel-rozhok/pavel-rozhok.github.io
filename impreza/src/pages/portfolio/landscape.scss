@@ -1,0 +1,117 @@
+@import '../../global/css/_variables';
+
+.landscape {
+  &__header {
+    position: relative;
+    height: 310px;
+    display: flex;
+    justify-content: center;
+    background-color: $main-background;
+  }
+
+  &__header-title {
+    position: absolute;
+    z-index: 3;
+    bottom: 64px;
+    left: auto;
+    right: auto;
+    margin: 0;
+    font-size: 60px;
+    line-height: 1.4;
+    font-weight: 300;
+    letter-spacing: -.05em;
+    text-transform: uppercase;
+    color: #fff;
+    @media screen and (max-width: $media-sm-max) {
+      font-size: 32px;
+    }
+  }
+
+  &__parallax  {
+    position: relative;
+    background: $main-background;
+    overflow: hidden;
+    margin: 0 auto;
+    height: 100vh;
+    width: 80%;
+  }
+
+  &__parallax-layer {
+    position: absolute;
+    height: 100vh;
+    width: 80%;
+  }
+
+  &__paralax-text {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+  }
+
+  &__section {
+    overflow: hidden;
+    &--main-color {
+      background-color: $main-color;
+    }
+    &--background-color {
+      background-color: $main-background;
+    }
+  }
+
+  &__content {
+    padding: 96px;
+    &--narrow {
+      display: flex;
+      justify-content: space-between;
+      @media screen and (max-width: 900px) {
+        display: block;
+      }
+    }
+  }
+
+  &__section-number {
+    font-size: 55px;
+    line-height: 1.3;
+    margin-top: 40px;
+    &--dark-color {
+      color: $dark-color;
+    }
+    &--main-color {
+      color: $main-color;
+    }
+    &--first-section {
+      margin-top: 0;
+    }
+  }
+
+  &__section-title {
+    color: #fff;
+    font-size: 32px;
+    line-height: 1.4;
+    margin-bottom: 25px;
+  }
+
+  &__section-description {
+    line-height: 30px;
+    color: #fff;
+    max-width: 520px;
+  }
+
+  &__section-image {
+    &--second {
+      width: 520px;
+      height: 100%;
+    }
+    &--third {
+      width: 520px;
+    }
+    &--fourth {
+      width: 800px;
+      align-items: center;
+      display: flex;
+      margin: 0 auto;
+    }
+  }
+}
+

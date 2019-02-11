@@ -1,0 +1,158 @@
+@import '../../global/css/variables';
+
+.navbar {
+  position: fixed;
+  z-index: 1000;
+  top: 0;
+  right: 0;
+  left: 0;
+  display: flex;
+  justify-content: flex-end;
+  height: 100px;
+  background-color: transparent;
+  transition: all 1s;
+  transition-property: background-color, height;
+  padding: 0 25px;
+  &--scroll {
+    height: 60px;
+    background-color: $main-background;
+    transition: all 1s;
+    transition-property: background-color, height;
+    .navbar {
+      &__link {
+        &:hover {
+          background-color: #000;
+        }
+      }
+    }
+  }
+  &--background {
+    background-color: $main-background;
+  }
+
+  &__logo {
+    height: 60%;
+    position: absolute;
+    top: 20%;
+    left: 25px;
+    @media screen and (max-width: 330px)  {
+      display: none;
+    }
+  }
+
+  &__links,
+  &__socials {
+    display: flex;
+    align-items: center;
+  }
+
+  &__links {
+    font-size: 20px;
+    margin-right: 30px;
+    @media screen and (max-width:1268px) {
+      position: fixed;
+      top: 1;
+      left: calc(0% - 300px);
+      padding: 15px;
+      display: block;
+      height: 100ch;
+      width: 300px;
+      background-color: $main-background;
+      transition: left .3s ease;
+      &--active {
+        left: 0;
+      }
+    }
+  }
+
+  &__link {
+    display: block;
+    padding: 15px 40px;
+    color: #fff;
+    transition: all .3s;
+    transition-property: background-color, color;
+    &:hover {
+      @media screen and (max-width:1268px) {
+        background-color: #000;
+      }
+    }
+    &:first-child {
+      @media screen and (max-width:400px) {
+        margin-top: 60px;
+      }
+    }
+    &:hover,
+    &:active {
+      color: $main-color;
+    }
+  }
+
+  &__hamburger {
+    display: none;
+    outline: none;
+    &:hover {
+      background-color: transparent;
+      .navbar__hamburger-inner {
+        background-color: $main-color;
+        &::before,
+        &::after {
+          background-color: $main-color;
+        }
+      }
+      &.is-active {
+        .navbar__hamburger-inner {
+          background-color: $main-color;
+          &::before,
+          &::after {
+            background-color: $main-color;
+          }
+        }
+      }
+    }
+
+    @media screen and(max-width:1268px) {
+      display: block;
+    }
+
+    &.is-active {
+      .navbar__hamburger-inner {
+        background-color: #fff;
+        &::before,
+        &::after {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+
+  &__hamburger-box {
+    display: flex;
+    align-items: center;
+  }
+
+  &__hamburger-inner {
+    background-color: #fff;
+    transition: background-color .15s ease !important;
+    &::before,
+    &::after {
+      background-color: #fff;
+      transition: background-color .15s ease !important;
+    }
+  }
+
+  &__socials {
+    @media screen and (max-width:600px) {
+      display: none;
+    }
+  }
+
+  &__social {
+    padding: 0 12px;
+    font-size: 25px;
+    color: #fff;
+    &:hover,
+    &:active {
+      color: $main-color;
+    }
+  }
+}

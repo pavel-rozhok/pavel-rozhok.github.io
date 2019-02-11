@@ -1,0 +1,29 @@
+.contact {
+  background-color: $main-color;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 102.8px;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $media-md-max) {
+      display: block;
+      text-align: center;
+    }
+  }
+
+  &__text {
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+    padding-top: 0;
+    line-height: 1  ;
+    @media screen and (max-width: $media-md-max) {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+  }
+}

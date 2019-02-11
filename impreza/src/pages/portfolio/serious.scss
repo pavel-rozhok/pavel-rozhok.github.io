@@ -1,0 +1,30 @@
+@import '../../global/css/_variables';
+
+.serious {
+  &__section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    &--first {
+      background: url($path-to-images + 'serious-bg1.jpg') no-repeat fixed 0/cover;
+    }
+    &--second {
+      background: url($path-to-images + 'serious-bg2.jpg') no-repeat fixed 0/cover;
+    }
+    &--third {
+      background: url($path-to-images + 'serious-bg3.jpg') no-repeat fixed 0/cover;
+    }
+  }
+
+  &__content {
+    width: 522px;
+    text-align: center;
+    color: #fff;
+  }
+
+  &__title {
+    font-size: 40px;
+    text-transform: uppercase;
+  }
+}

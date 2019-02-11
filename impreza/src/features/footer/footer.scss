@@ -1,0 +1,55 @@
+  @import '../../global/css/variables';
+
+.footer {
+  padding: 45px 0;
+  background-color: $main-background;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @media screen and (max-width: $media-md-max) {
+      display: block;
+    }
+  }
+
+  &__copy {
+    color: $gray;
+    @media screen and (max-width: $media-md-max) {
+    text-align: center;
+    }
+  }
+
+  &__copy-link {
+    color: #fff;
+    &:hover {
+      color: $main-color;
+    }
+  }
+
+  &__links {
+    @media screen and (max-width: $media-md-max) {
+      text-align: center;
+    }
+    @media screen and (max-width:$media-sm-max) {
+      flex-direction: column;
+      align-items: center;
+      margin-top: 20px;
+      &:last-child {
+        padding-right: 12px;
+      }
+    }
+  }
+
+  &__link {
+    padding: 12px;
+    color: #fff;
+    &:hover {
+      color: $main-color;
+    }
+    &:last-child {
+      padding-right: 0;
+    }
+  }
+}
+
