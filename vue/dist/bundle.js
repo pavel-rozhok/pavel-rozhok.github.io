@@ -20887,7 +20887,7 @@ var render = function() {
                   ref: "c" + rowIndex + cellIndex,
                   refInFor: true,
                   staticClass: "game__cell",
-                  attrs: { type: "text", maxlength: "1" },
+                  attrs: { maxlength: _vm.level <= 3 ? 1 : 2, type: "text" },
                   domProps: { value: _vm.cells[rowIndex][cellIndex] },
                   on: {
                     input: [
