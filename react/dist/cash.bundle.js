@@ -17354,7 +17354,7 @@ exports = module.exports = __webpack_require__(/*! ../../../../../node_modules/c
 
 
 // module
-exports.push([module.i, ".game__modal {\n  display: flex;\n  justify-content: space-between; }\n\n.game__modal-title {\n  display: flex;\n  justify-content: center;\n  font-size: 32px;\n  margin: 20px auto 30px; }\n\n.game__settings {\n  display: flex;\n  justify-content: center; }\n\n.game__button {\n  margin: 0 10px; }\n\n.game__cells {\n  display: flex;\n  justify-content: center;\n  padding: 30px; }\n\n.game__row {\n  font-size: 12px;\n  display: flex;\n  flex-wrap: nowrap; }\n\n.game__cell {\n  max-width: 50px;\n  height: 50px;\n  font-size: 25px;\n  text-align: center;\n  border: 1px solid #000;\n  outline: none;\n  color: #fff;\n  background-color: #2196f3; }\n  .game__cell--yellow {\n    background-color: #3f51b5; }\n  .game__cell:focus {\n    border: 2px solid red; }\n  .game__cell[readonly] {\n    font-weight: 900;\n    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0; }\n", ""]);
+exports.push([module.i, ".game__modal {\n  display: flex;\n  justify-content: space-between; }\n\n.game__modal-title {\n  display: flex;\n  justify-content: center;\n  font-size: 32px;\n  margin: 20px auto 30px; }\n\n.game__settings {\n  display: flex;\n  justify-content: center; }\n\n.game__button {\n  margin: 0 10px; }\n\n.game__cells {\n  display: flex;\n  justify-content: center;\n  padding: 30px; }\n\n.game__row {\n  font-size: 12px;\n  display: flex;\n  flex-wrap: nowrap; }\n\n.game__cell {\n  max-width: 50px;\n  height: 50px;\n  font-size: 25px;\n  text-align: center;\n  border: 1px solid #000;\n  outline: none;\n  color: #fff;\n  background-color: #2196f3; }\n  @media screen and (max-width: 480px) {\n    .game__cell {\n      max-width: 40px;\n      height: 40px;\n      font-size: 20px; } }\n  .game__cell--yellow {\n    background-color: #3f51b5; }\n  .game__cell:focus {\n    border: 2px solid red; }\n  .game__cell[readonly] {\n    font-weight: 900;\n    text-shadow: #000 1px 1px 0, #000 -1px -1px 0, #000 -1px 1px 0, #000 1px -1px 0; }\n", ""]);
 
 // exports
 
@@ -37871,6 +37871,7 @@ function (_Component) {
       setTimeout(function () {
         _this.getCells();
       }, 0);
+      console.log(_this.c00);
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "getCells", function () {
@@ -38119,6 +38120,7 @@ function (_Component) {
               return _this2.updateCells(target, rowIndex, cellIndex);
             },
             className: "game__cell",
+            ref: "c".concat(rowIndex).concat(cellIndex),
             defaultValue: cell,
             maxLength: _this2.state.level <= 3 ? 1 : 2
           });
