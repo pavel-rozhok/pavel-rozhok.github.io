@@ -37980,6 +37980,10 @@ function (_Component) {
           input.innerHTML = '';
         }
       });
+
+      _this.setState({
+        cells: Object(chober__WEBPACK_IMPORTED_MODULE_5__["clone"])(_this.state.fixedCells)
+      });
     });
 
     _defineProperty(_assertThisInitialized(_assertThisInitialized(_this)), "check", function () {
