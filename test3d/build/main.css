@@ -1,0 +1,31 @@
+body {
+  background-color: #ffffff;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  box-sizing: border-box;
+}
+#info {
+  position: absolute;
+  top: 0px;
+  width: 100%;
+  color: #50ac50;
+  padding: 5px;
+  font-family: Monospace;
+  font-size: 13px;
+  text-align: center;
+  z-index: 1;
+}
+
+a {
+  color: #b17878;
+}
+
+.test {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0 ;
+  z-index: 1000 ;
+  background-color: #fff;
+}
