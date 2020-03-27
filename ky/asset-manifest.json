@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e2ca43d7.chunk.css",
+    "main.js": "/static/js/main.36169915.chunk.js",
+    "main.js.map": "/static/js/main.36169915.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.41fb8688.js",
+    "runtime-main.js.map": "/static/js/runtime-main.41fb8688.js.map",
+    "static/css/2.008c07f9.chunk.css": "/static/css/2.008c07f9.chunk.css",
+    "static/js/2.ebf30fc3.chunk.js": "/static/js/2.ebf30fc3.chunk.js",
+    "static/js/2.ebf30fc3.chunk.js.map": "/static/js/2.ebf30fc3.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cf5cc12c30019d11d815a04eb49972aa.js": "/precache-manifest.cf5cc12c30019d11d815a04eb49972aa.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/2.008c07f9.chunk.css.map": "/static/css/2.008c07f9.chunk.css.map",
+    "static/css/main.e2ca43d7.chunk.css.map": "/static/css/main.e2ca43d7.chunk.css.map",
+    "static/js/2.ebf30fc3.chunk.js.LICENSE.txt": "/static/js/2.ebf30fc3.chunk.js.LICENSE.txt",
+    "static/media/Rich_Colon_banner.jpg": "/static/media/Rich_Colon_banner.c36d1890.jpg",
+    "static/media/cake1.gif": "/static/media/cake1.c970b9c3.gif",
+    "static/media/сайт.jpg": "/static/media/сайт.ed4976fc.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.41fb8688.js",
+    "static/css/2.008c07f9.chunk.css",
+    "static/js/2.ebf30fc3.chunk.js",
+    "static/css/main.e2ca43d7.chunk.css",
+    "static/js/main.36169915.chunk.js"
+  ]
+}
